@@ -33,7 +33,31 @@ ________________________________________________________________________________
 
 *27 juli 2023, 1:32 am, aku ngantuk alias aku buntu, mau tidur dulu yaa*
 
+*28 Juli 2023, 5.44AM*
+Membuat 2 User baru
 
+          sudo adduser user01
+          Password : testing123
+
+          sudo adduser user02
+          password: testing123
+
+membuat directory di user01 dan user02
+
+          sudo mkdir /home/user01/latihan-user01
+          sudo ls -l /home/user01
+
+          sudo mkdir /home/user02/latihan-user02
+          sudo ls -l /home/user02
+
+membuat file dengan perintah touch
+
+          sudo touch /home/user01/latihan-user01/file-user01.sh
+          sudo ls -l /home/user01/latihan-user01
+
+mengganti pemilik directory dari root ke user02
+
+          
 
 
 

@@ -57,7 +57,11 @@ membuat file dengan perintah touch
 
 mengganti pemilik directory dari root ke user02
 
-          
+          sudo chown -R user02:user02 /home/user01/latihan-user01
+          sudo ls -l /home/user01/
+
+          sudo chmod 777 /home/user01/latihan-user01/file-user01.sh
+          sudo ls -l /home/user01/latihan-user01
 
 
 

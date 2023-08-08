@@ -1,0 +1,15 @@
+================Membuat User baru====================
+
+kriteria :
+username : dicoding
+nama lengkap : Dicoding Indonesia
+
+    sudo adduser dicoding
+    password : testing123
+
+    Full name : Dicoding Indonesia
+    Other : Bandung
+
+
+=============Membuat Konfigurasi SSH===================
+akan dilanjutkan esok hari yaa

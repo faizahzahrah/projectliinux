@@ -16,4 +16,8 @@ akan dilanjutkan esok hari yaa
 
   
 membuat ssh key di mesin pertama : username faizahzarh
+    ssh-keygen
+
+membuat akun mesin kedua kedalam sudo group
+    sudo usermod -aG sudo dicoding
 

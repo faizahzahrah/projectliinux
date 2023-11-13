@@ -1,0 +1,51 @@
+Proyek akhir untuk kelas Menjadi Linux administrator
+
+Kriteria 1 
+               Membuat User baru
+Username : dicoding
+full name : Dicoding Indonesia
+
+              Prosedur Pengerjaan
+- User Manajemen (Membuat User)
+     sudo adduser dicoding
+     paswword : Dicoding 123
+    fullname : Dicoding Indonesia
+
+Kriteria 2
+              Mengonfigurasi SSH
+1. Remote Login menggunakan metode SSH
+User (Faizah) = Mesin Pertama
+User (Dicoding) = Mesin Kedua, alamat (localhost), metode (password)
+
+2. Metode Login dengan mtode Key Pair
+User (Faizah) = Buatkan Key Pair
+                salin public key pair ke mesin kedua
+                remote login ke mesin kedua
+
+3. Ubah konfigurasi SSH pada mesin pertama agar:
+  -. Autentikasi hany via public key
+  -. Autentikasi tidak bisa via password
+  -. Port SSH menjadi 2000
+  -. Remote login tidak boleh nggunakan root
+  LAKUKAN REMOTE LOGIN KE MESIN KEDUA
+
+
+Kriteria 3
+              Membuat berkas daftar User dan Log SSH
+1. daftar-user.txt -> Berisi daftarb user yang ada di sistem linux.
+2. log-ssh.txt -> berisi entri log terkait SSH.
+
+SARAN 1 
+Membuat berkas log-ssh.json yang berisi log terkait SSH dalam bentuk JSON
+
+SARAN 2
+membuat daftar-user.txt.gpg (hasil enkripsidari berkas daftar-user.txt)
+
+SARAN 3
+membuat berkas shell script bernama hapus-log.sh dengan ketentuan=
+    1. Menampilkan informasi penggunaan disk dari semua berkas journalctl, baik yang aktif maupun yang diarsipkan
+    2. Menghapus journalctl log hingga ruang disk yang digunakan untuk log berkisar 10 MB
+    3. Menampilkan kembali informasi penggunaan disk dari semua berkas journalctl, baik yang aktif maupun yang diarspkan
+    4. gunakan komentar, baris baru, dan jeda untuk memudahkan pembacaan output perintah dari script
+    5. Gunakan perulangan while agar perintah terus berulang
+

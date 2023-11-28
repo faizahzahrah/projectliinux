@@ -8,7 +8,7 @@ full name : Dicoding Indonesia
               Prosedur Pengerjaan
 - User Manajemen (Membuat User)
      sudo adduser dicoding
-     paswword : Dicoding 123
+     paswword : Dicoding123
     fullname : Dicoding Indonesia
 
 Kriteria 2
@@ -17,17 +17,43 @@ Kriteria 2
 User (Faizah) = Mesin Pertama
 User (Dicoding) = Mesin Kedua, alamat (localhost), metode (password)
 
+            Prosedur pengerjaan langkah 1
+Install SSH Server dengan perintah apt
+    => ssh apt install openssh-server
+
+Memulai service ssh agar daemon sshd bisa berjalan di background
+    => sudo systemctl start sshd.service
+
+agar service dapat dijalan setelah komputer boot, perlu dilakukan enable ssh dengan perintah
+    =>sudo systemctl enable sshd.service
+
+
 2. Metode Login dengan mtode Key Pair
 User (Faizah) = Buatkan Key Pair
                 salin public key pair ke mesin kedua
                 remote login ke mesin kedua
+            Prosedur pengerjaan langkah 2
+Membuat Key Pair
+  =>ssh-keygen
+
+salin public key pair ke mesin kedua
+  =>ssh-copy-id -i ~/.ssh/id_rsa.pub dicoding@localhost
+
+remote login ke mesin kedua
+    =>ssh dicoding@localhost
+    =>PASSWORD: Dicoding123
 
 3. Ubah konfigurasi SSH pada mesin pertama agar:
-  -. Autentikasi hany via public key
+  -. Autentikasi hanya via public key
   -. Autentikasi tidak bisa via password
   -. Port SSH menjadi 2000
   -. Remote login tidak boleh nggunakan root
   LAKUKAN REMOTE LOGIN KE MESIN KEDUA
+
+      Pengerjaan Langkah 3
+Autentikasi hanya via public key, dilakukan dengan mengedit file .ssh/authorized_keys
+    => 
+Let me sleep, so i can wake up for shubuh on time
 
 
 Kriteria 3

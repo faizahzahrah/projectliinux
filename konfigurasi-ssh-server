@@ -51,14 +51,19 @@ remote login ke mesin kedua
   LAKUKAN REMOTE LOGIN KE MESIN KEDUA
 
       Pengerjaan Langkah 3
-Autentikasi hanya via public key, dilakukan dengan mengedit file .ssh/authorized_keys
-    => 
-Let me sleep, so i can wake up for shubuh on time
-
+Autentikasi hanya via public key, dilakukan dengan mengedit file .ssh/authorized_keys, dapat diakses melalui
+    =>pastikan berada di mesin pertama
+    =>sudo nano /etc/ssh/sshd_config
+    =>PubkeyAuthentication yes
+    =>PasswordAuthentication no
+    =>PermitRootLogin no
+    =>Port 2000
+    =>sudo systemctl restart sshd.service
+    =>ssh dicoding@localhost
 
 Kriteria 3
               Membuat berkas daftar User dan Log SSH
-1. daftar-user.txt -> Berisi daftarb user yang ada di sistem linux.
+1. daftar-user.txt -> Berisi daftar user yang ada di sistem linux.
 2. log-ssh.txt -> berisi entri log terkait SSH.
 
 SARAN 1 

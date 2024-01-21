@@ -78,3 +78,5 @@ Setelah membuat berkas shell script (yang ketika dijalankan sukses memenuhi semu
 Oke, dengan mengerjakan kriteria 1 dan kriteria 2, artinya kini Anda memiliki 2 berkas: script-<username_dicoding>.sh dan history-<username_dicoding>.txt. Selanjutnya, Anda harus mengarsipkan dan mengompresi 2 berkas tersebut menjadi ZIP melalui terminal dengan nama submission1-linux-<username_dicoding>.zip.
 
 Dalam rangka pembuktian, silakan lakukan screenshot terhadap terminal untuk menunjukkan bahwa Anda menjalankan beberapa perintah pembuatan ZIP.
+
+

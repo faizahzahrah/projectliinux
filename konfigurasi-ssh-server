@@ -61,10 +61,15 @@ Autentikasi hanya via public key, dilakukan dengan mengedit file .ssh/authorized
     =>sudo systemctl restart sshd.service
     =>ssh dicoding@localhost
 
+Autentikasi tidak bisa via password
+    => 
+
 Kriteria 3
               Membuat berkas daftar User dan Log SSH
 1. daftar-user.txt -> Berisi daftar user yang ada di sistem linux.
 2. log-ssh.txt -> berisi entri log terkait SSH.
+
+*** Resource: https://www.dicoding.com/academies/423/discussions/246110
 
 SARAN 1 
 Membuat berkas log-ssh.json yang berisi log terkait SSH dalam bentuk JSON

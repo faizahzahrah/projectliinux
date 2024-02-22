@@ -74,6 +74,10 @@ Kriteria 3
 SARAN 1 
 Membuat berkas log-ssh.json yang berisi log terkait SSH dalam bentuk JSON
 
+<b>Kustomisasi Format Output Journalctl<b>
+https://www.dicoding.com/academies/423/tutorials/25855
+
+
 SARAN 2
 membuat daftar-user.txt.gpg (hasil enkripsidari berkas daftar-user.txt)
 
